@@ -5,14 +5,15 @@ class Program
 {
     static void Main()
     {
-        // Verifica el balanceo de paréntesis.
+        // Comprueba el balanceo de paréntesis.
         Console.WriteLine("=== Verificación de Fórmula Balanceada ===");
         string expression = "{7+(8*5)-[(9-7)+(4+1)]}";
         bool isBalanced = BalanceChecker.IsBalanced(expression);
         Console.WriteLine($"La fórmula \"{expression}\" está balanceada: {isBalanced}");
 
         Console.WriteLine("\n=== Resolución de las Torres de Hanoi ===");
-        // Resuelve el problema de las Torres de Hanoi.
+        
+        // Soluciona el problema de las Torres de Hanoi.
         int numDisks = 3;
 
         Tower source = new Tower("Origen");

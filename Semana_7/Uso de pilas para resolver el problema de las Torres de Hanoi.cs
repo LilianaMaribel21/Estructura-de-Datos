@@ -24,12 +24,8 @@ namespace Utilities
 
     public static class HanoiSolver
     {
-        /// Resuelve el problema de las Torres de Hanoi de forma recursiva.
-        /// "n"Número de discos.
-        /// "source"Torre de origen.
-        /// "auxiliary"Torre auxiliar.
-        /// "destination">Torre de destino.
-        public static void Solve(int n, Tower source, Tower auxiliary, Tower destination)
+        // Resuelve el problema de las Torres de Hanoi de forma recursiva.
+        public static void Solve(int n, Tower source, Tower auxiliary, Tower destination)   // "n"Número de discos -"source"Torre de origen - "auxiliary"Torre auxiliar - "destination"Torre de destino.
         {
             if (n == 1)
             {
@@ -45,10 +41,9 @@ namespace Utilities
    public static class BalanceChecker
     {
         
-        /// Verifica si una expresión matemática está balanceada en términos de paréntesis, corchetes y llaves.
-        /// "expression"La expresión matemática que sera verificada.
-        //Verdadero si está balanceada, falso si no lo es.
-        public static bool IsBalanced(string expression)
+        // Comprueba si una expresión matemática se encuentra balanceada en términos de paréntesis, corchetes y llaves.
+        // Verdadero si está balanceada, falso si no lo es.
+        public static bool IsBalanced(string expression)   // "expression" La expresión matemática que sera verificada.
         {
             Stack<char> stack = new Stack<char>();
 
